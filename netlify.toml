@@ -3,7 +3,7 @@
 
 [build]
   # Build command for the frontend
-  command = "cd frontend && npm run build"
+  command = "cd frontend && npm install && npm run build"
   
   # Directory to publish (where the built files are located)
   publish = "frontend/dist"
@@ -37,10 +37,10 @@
 
 # Environment-specific settings
 [context.production]
-  command = "cd frontend && npm run build"
+  command = "cd frontend && npm install && npm run build"
 
 [context.deploy-preview]
-  command = "cd frontend && npm run build"
+  command = "cd frontend && npm install && npm run build"
 
 [context.branch-deploy]
-  command = "cd frontend && npm run build"
+  command = "cd frontend && npm install && npm run build"
